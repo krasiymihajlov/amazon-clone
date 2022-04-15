@@ -19,3 +19,9 @@ For icons: - https://mui.com/
 Snippets:
 - ES7 React/Redux snippets
 - Prettier - Code formatter (Additionally set in Settings -> Format On Safe)
+
+To Route our pages: 
+- npm install react-router-dom
+
+Currency formatting library:
+- npm i react-currency-format
