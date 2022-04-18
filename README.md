@@ -10,7 +10,11 @@ if use git bash:  $ git clone  https://github.com/krasiymihajlov/amazon-clone.gi
 Used tools packages:
 
 Firebasе: - https://firebase.google.com -> registratiton and new project(this is our base)
-- npm install -g firebase-tools
+Follow the steps:
+1. npm install -g firebase-tools
+2. Firebase configuration: Project Settings -> SDK setup and configuration -> Config -> Coppy in firebase.js file
+3. For Authentication: Authentication -> Email/Password -> Enable -> Save -> BAM! That work
+4. npm i firebase
 
 For icons: - https://mui.com/
 - npm install @mui/material @emotion/react @emotion/styled
