@@ -1,17 +1,13 @@
 import React, {useState} from "react";
 import './Login.css'
 import { Link} from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword  } from 'firebase/auth';
 import { auth } from "./firebase.js";
 
 
 function Login() {
-    //TODO: redirect from browseHistroy to homepage -> "/"
-    // const history = useHistory(); 
-    // function handleClick() {
-    //     history.push("/");
-    //   }    
+    const navigate = useNavigate()
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -21,8 +17,7 @@ function Login() {
 
         signInWithEmailAndPassword(auth, email, password)
         .then(auth => {
-            //history.push('/')
-            console.log('Its OK!!!')
+            navigate('/')
         })
         .catch(error => alert(error.message))
     }
@@ -32,9 +27,7 @@ function Login() {
 
         createUserWithEmailAndPassword(auth, email, password)
             .then((auth) => {
-                //its succesfully created a new user with email and password
-                //console.log(auth);
-                //history.push("/");
+                navigate('/')
             })
             .catch(error => alert(error.message));
     }

@@ -15,7 +15,19 @@ Follow the steps:
 2. Firebase configuration: Project Settings -> SDK setup and configuration -> Config -> Coppy in firebase.js file
 3. For Authentication: Authentication -> Email/Password -> Enable -> Save -> BAM! That work
 4. npm i firebase; - "https://firebase.google.com/docs/web/setup"
-5. authentication settings - "https://firebase.google.com/docs/auth/web/start"
+5. authentication settings(If needed)- "https://firebase.google.com/docs/auth/web/start"
+
+Deployment:
+- firebase login
+- firebase init -> Follow the steps:
+						-> Hosting: Configure files for firebase Hosting ... 
+						-> Use an existing project 
+						-> Choose Project Name
+						-> WHat do you want to use as your public directory? -> build    <- This is important!
+						-> Confugure as a single-page app(rewrite all urls to /index.html)? -> y		 <- This is important!
+						-> Follow the next steps:
+- npm run build
+- firebase deploy
 
 For icons: - https://mui.com/
 - npm install @mui/material @emotion/react @emotion/styled

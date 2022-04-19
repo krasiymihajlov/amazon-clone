@@ -15,7 +15,7 @@ function App() {
     //will only run once when app component loads... 
     //We atach this listener(observer) to the login on client
     auth.onAuthStateChanged(authUser => {
-      console.log('THE USER IS >>> ', authUser)
+      //console.log('THE USER IS >>> ', authUser)
 
       if(authUser){
           //If logged in put it in reducer
