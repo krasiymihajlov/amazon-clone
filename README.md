@@ -14,7 +14,8 @@ Follow the steps:
 1. npm install -g firebase-tools
 2. Firebase configuration: Project Settings -> SDK setup and configuration -> Config -> Coppy in firebase.js file
 3. For Authentication: Authentication -> Email/Password -> Enable -> Save -> BAM! That work
-4. npm i firebase
+4. npm i firebase; - "https://firebase.google.com/docs/web/setup"
+5. authentication settings - "https://firebase.google.com/docs/auth/web/start"
 
 For icons: - https://mui.com/
 - npm install @mui/material @emotion/react @emotion/styled

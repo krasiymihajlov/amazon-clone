@@ -1,20 +1,42 @@
 import React, {useState} from "react";
 import './Login.css'
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword  } from 'firebase/auth';
+import { auth } from "./firebase.js";
 
 
 function Login() {
+    //TODO: redirect from browseHistroy to homepage -> "/"
+    // const history = useHistory(); 
+    // function handleClick() {
+    //     history.push("/");
+    //   }    
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const signIn = e => {
-        e.preventDefault()
+        e.preventDefault();
 
-        //
+        signInWithEmailAndPassword(auth, email, password)
+        .then(auth => {
+            //history.push('/')
+            console.log('Its OK!!!')
+        })
+        .catch(error => alert(error.message))
     }
 
     const register = e => {
         e.preventDefault()
+
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((auth) => {
+                //its succesfully created a new user with email and password
+                //console.log(auth);
+                //history.push("/");
+            })
+            .catch(error => alert(error.message));
     }
 
     return (
