@@ -1,5 +1,6 @@
 # amazon-clone
 Project for a fully functional clone of amazon implemented with React.js
+
 Hosting URL: https://fir-d9d80.web.app
 
 For Run:
