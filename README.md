@@ -22,12 +22,12 @@ Follow the steps:
 Deployment:
 - firebase login
 - firebase init -> Follow the steps:
-						-> Hosting: Configure files for firebase Hosting ... 
-						-> Use an existing project 
-						-> Choose Project Name
-						-> WHat do you want to use as your public directory? -> build    <- This is important!
-						-> Confugure as a single-page app(rewrite all urls to /index.html)? -> y		 <- This is important!
-						-> Follow the next steps:
+						- Hosting: Configure files for firebase Hosting ... 
+						- Use an existing project 
+						- Choose Project Name
+						- WHat do you want to use as your public directory? -> build    <- This is important!
+						- Confugure as a single-page app(rewrite all urls to /index.html)? -> y		 <- This is important!
+						- Follow the next steps:
 - npm run build
 - firebase deploy
 
