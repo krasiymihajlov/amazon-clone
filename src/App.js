@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header.js';
 import Home from './Home.js';
 import Checkout from './Checkout.js';
+import Payment from './Payment.js';
 import Login from './Login';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import React, {useEffect} from 'react'
@@ -38,6 +39,11 @@ function App() {
     <BrowserRouter>     
       <div className='app'>
         <Routes>
+          <Route path="payment" element={
+            <div className='payment'>
+                <Header />
+                <Payment />
+            </div>}/>
           <Route path="/login" element={
             <div className="login">
               <Login />
