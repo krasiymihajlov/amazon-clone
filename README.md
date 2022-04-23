@@ -50,8 +50,9 @@ Firebasе: - https://firebase.google.com -> registratiton and new project(this i
 Deployment:
 - firebase login
 - firebase init 
+
 - npm run build
-- firebase deploy
+- firebase deploy --only hosting
 
 Follow the steps and questions for "firebase init" :
 - Hosting: Configure files for firebase Hosting ... 
